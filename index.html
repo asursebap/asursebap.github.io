@@ -25,7 +25,11 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/favicon.png" />
+
+    <!--JS-->
+    <script src="js/main.js"></script>
   </head>
+
 
   <!--Nav bar-->
   <body>
@@ -66,84 +70,195 @@
               <a class="nav-link" href="Otros.html">Otros</a>
             </li>
           </ul>
-          <a class="btn col-1,5" id="login"href="#login"
+          <a class="btn col-2" id="login"href="#login"
               >Iniciar sesión</a
             >
         </div>
       </div>
     </nav>
 
-    <!--Sección inicial-->
-    <main class="pt-5 bg-color">
-      <div class="container">
-        <section class="row text-dark align-items-lg-center mb-5">
-          <article class="col-12 col-lg-8">
-            <h2>Tu salud mental es prioridad</h2>
-            <p class="fs-5">
-              Hablar con alguien cuando te sientes mal, puede ser beneficioso para tu bienestar emocional y psicológico. Abrirse a la posibilidad de buscar apoyo es un importante paso para mejorar tu estado animico.
-              Ofrecemos ayuda profesional de nuestros psicologos de confianza. 
-            </p>
-            <a class="btn btn-success btn-lg col-6 " href="#servicios" id="Comenzar" 
-              >Comenzar</a
-            >
-          </article>
-          <article class="col-12 col-lg-4">
-            <img
-              class="img-fluid"
-              src="img/header-image.png"
-              alt="Salud mental prioridad"
-            />
-          </article>
-          <article class="col-12 col-lg-8 order-lg-1">
-            <h2>¿Necesito terapia?</h2>
-            <p class="fs-5">
-             Si sientes que tus problemas emocionales o de salud mental están interfiriendo en tu calidad de vida o en tu capacidad para funcionar de manera efectiva, podría ser un buen momento para considerar la terapia. 
-    
-             Recuerda que no es necesario esperar a que los problemas sean graves para buscar ayuda; la terapia puede ser beneficiosa en cualquier etapa.
-            </p>
-          </article>
-          <article class="col-12 col-lg-4">
-            <img
-              class="img-fluid"
-              src="img/header-image-2.png"
-              alt="Sitios web responsivos"
-            />
-          </article>
+<!--Sección inicial-->
+<main class="pt-5 bg-color">
+    <div class="container">
+        <section class="row text-dark align-items-center mb-5">
+            <article class="col-12 col-lg-8 text-center mb-4 mb-lg-0">
+                <h2>Tu salud mental es prioridad</h2>
+                <p class="fs-5">
+                    Hablar con alguien cuando te sientes mal, puede ser beneficioso para tu bienestar emocional y psicológico. Abrirse a la posibilidad de buscar apoyo es un importante paso para mejorar tu estado animico. Ofrecemos ayuda profesional de nuestros psicólogos de confianza.
+                </p>
+                <a class="btn btn-success btn-lg col-8 col-lg-6" href="#servicios" id="Comenzar">Comenzar</a>
+            </article>
+            <article class="col-12 col-lg-4 text-center">
+                <img class="img-fluid" src="img/header-image.png" alt="Salud mental prioridad">
+            </article>
+            <article class="col-12 col-lg-8 order-lg-1 text-center">
+                <h2>¿Necesito terapia?</h2>
+                <p class="fs-5">
+                    Si sientes que tus problemas emocionales o de salud mental están interfiriendo en tu calidad de vida o en tu capacidad para funcionar de manera efectiva, podría ser un buen momento para considerar la terapia. Recuerda que no es necesario esperar a que los problemas sean graves para buscar ayuda; la terapia puede ser beneficiosa en cualquier etapa.
+                </p>
+            </article>
+            <article class="col-12 col-lg-4 text-center">
+                <img class="img-fluid" src="img/header-image-2.png" alt="Sitios web responsivos">
+            </article>
         </section>
+    </div>
+</main>
 
+  <!--Testimonios-->
+    <div class="container mx-auto" style="width: 1500px;">
+      <div class="testimonial-slider">
+        <div id="carouselExampleControls" class="carousel carousel-dark" data-bs-ride="carousel">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-title">
+                        <i class="bi bi-quote display-2" id="quote_icon"></i>
+                        <h2 class="fw-bold display-6">Testimonio de Clientes</h2>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" id="prev_btn">
+                        <span class="carousel-control-prev-icon" id="prev_icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Atrás</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" id="next_btn">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Adelante</span>
+                    </button>
+                </div>
+                <div class="col-md-8">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Manuel Bulnes</h5>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <p class="card-text">"Desde que comencé mi proceso terapéutico en la Clínica Equilibrio espiritual, he experimentado una renovación vital. El equipo profesional me ha brindado un espacio seguro para explorar mis emociones y desafíos, guiándome hacia una mayor comprensión y aceptación de mí mismo."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Eloísa Díaz</h5>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <p class="card-text">"La clinica ha superado mis expectativas en términos de atención personalizada. Cada sesión se siente única y adaptada a mis necesidades específicas. El compromiso del equipo terapéutico con mi bienestar ha sido evidente desde el primer día."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arturo Alessandri</h5>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <p class="card-text">"En mi búsqueda de equilibrio espiritual, la Clínica ha sido fundamental. La empatía y profesionalismo demostrados por el equipo terapéutico han creado un ambiente de confianza que me ha permitido abordar mis preocupaciones más profundas de manera efectiva."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gladys Marín</h5>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <p class="card-text">"La Clínica Equilibio Espiritual ha sido mi oasis de paz interior. Cada visita me deja con una sensación de serenidad"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gabriel Boric</h5>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <p class="card-text">"Ya no más verguenza al pedalear, ningun obstaculo me podrá frenar"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Violeta Parra</h5>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                                    <p class="card-text">"La terapia ha sido mi faro en la búsqueda de la felicidad. Su atención personalizada y profesionalismo han allanado el camino hacia una vida más plena y satisfactoria."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container mx-auto">
+    <section class="row text-dark align-items-center mb-5">
+        <article class="col-12 col-lg-6 text-center mb-4 mb-lg-0">
+            <h2 class="mb-4 mt-5">Servicios disponibles</h2>
+            <div class="btn-group-vertical" role="group" aria-label="Vertical button group align">
+                <a class="btn btn-primary col-12 mb-2" id="servicios_1">Terapia individual</a>
+                <a class="btn btn-primary col-12 mb-2" id="servicios_2">Terapia en pareja</a>
+                <a class="btn btn-primary col-12 mb-2" id="servicios_3">Terapia familiar</a>
+                <a class="btn btn-primary col-12 mb-2" id="servicios_4">Terapia infantil</a>
+            </div>
+        </article>
+        <article class="col-12 col-lg-6 text-center">
+            <img class="img-fluid" src="img/servicios.png" alt="Servicios">
+        </article>
+    </section>
+</div>
+
+
+    <!--Sección consultas-->
       <div class="container">
         <section class="row text-dark align-items-lg-center mb-5">
-          <article class="col-12 col-lg-6">
-            <h2>Servicios disponibles</h2>
-            <div class="btn-group-vertical align-items-lg-center" role="group" aria-label="Vertical button group">
-            <a class="btn m-4 col-12" id="servicios_1"
-              >Terapia individual</a
-            >
-            <a class="btn m-4 col-12 col-l-12" id="servicios_2"
-              >Terapia en pareja</a
-            >
-            <a class="btn m-4 col-12" id="servicios_3"
-              >Terapia familiar</a
-            >
-            <a class="btn m-4 col-12" id="servicios_4"
-              >Terapia infantil</a
-            >
+          <article class="col-12 text-center">
+            <h2 id="consultas" class="m-5 mt-5">¿Dudas o consultas?</h2>
+              <form action="" method="POST" id="dudas">
+                <div class="mb-3">
+                  <label for="Inputname" class="form-label">Nombre completo</label>
+                  <input type="text-dark" class="form-control" id="Inputname" required>
+                </div>
+                <div class="mb-3">
+                  <label for="InputEmail1" class="form-label">Correo electronico</label>
+                  <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                  <label for="InputMessage" class="form-label">Mensaje</label>
+                  <div class="form-floating">
+                  <textarea class="form-control" id="InputMessage" required style="height: 250px;"></textarea>
+                </div>
+                </div>
+                
+                <button type="submit" class="btn mt-4 mb-4" id=consultas_btn>Enviar</button>
+                <p class="warnings" id="warnings"></p>
+              </form>
 
-          </div>
-          </article>
-          </article>
-          <article class="col-12 col-lg-6">
-            <img
-              class="img-fluid"
-              src="img/servicios.png"
-              alt="Servicios"
-            />
-          </article>
     <!--Footer-->
-    </main>
-    <footer class="bg-dark p-3">
-      <div class="container text-center">
-        <nav class="d-flex justify-content-evenly">
+    <footer class="bg-dark py-3">
+      <div class="container text-center bg-dark">
+        <nav class="d-flex justify-content-evenly bg-dark" >
           <a href="https://facebook.com" target="_blank"
             ><i class="bi bi-facebook fs-3"></i
           ></a>
@@ -169,6 +284,7 @@
         </small>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
