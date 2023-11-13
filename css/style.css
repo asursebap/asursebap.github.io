@@ -78,7 +78,7 @@ footer{
 }
 
 .nav-link:hover {
-  color: var(--bg-color); 
+  color: var(--first-color); 
 }
 
 .warnings {
@@ -166,6 +166,27 @@ footer{
 
 }
 
+
+#perfiles{
+  background-color: var(--bg-color);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#perfiles .card{
+
+}
+
+#perfiles .btn{
+  background-color: var(--first-color);
+  color: white;
+  margin-left: 450px;
+  margin-top: 120px;
+  margin-bottom: 0px;
+}
+
 }
 .bg-color {
   background-color: var(--bg-color);
@@ -210,7 +231,7 @@ footer{
   padding-left: 0.2em;
   color: var(--first-color);
 }
-.card {
+#testimonio .card {
   margin: 0 0.5em;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   border: none;
@@ -218,7 +239,7 @@ footer{
   width: 300px;
 }
 
-.card-title {
+#testimonio .card-title {
   color: var(--first-color);
   font-weight: bold;
 }
@@ -252,7 +273,6 @@ footer{
   .carousel-control-next {
     width: 3em;
     height: 3em;
-    position: absolute;
     left: 1em;
     top: 90%;
     opacity: 1;
@@ -276,7 +296,6 @@ footer{
 #quote_icon{
   color: var(--first-color);
 }
-
 
 
 /*bootstrap responsive//
