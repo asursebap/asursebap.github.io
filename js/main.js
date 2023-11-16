@@ -1,30 +1,7 @@
-//sección de dudas
-document.addEventListener("DOMContentLoaded", function() {
-  let email = document.getElementById("InputEmail1");
-  const form = document.getElementById("dudas");
-  const parrafo = document.getElementById("warnings");
-
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    let warnings = "";
-    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    let entrar = false;
-    parrafo.innerHTML = "";
-
-    if (!regexEmail.test(email.value)) {
-      warnings += 'El email no es valido <br>';
-      console.log("email no valido");
-      entrar = true;
-      alert("Email no valido")
-    }
-
-    if (entrar) {
-      parrafo.innerHTML = warnings;
-    }
-  });
-});
 
 
+//Validación registro
+ 
 
 //Validación registro
  document.addEventListener('DOMContentLoaded', function () {
@@ -174,7 +151,6 @@ function validarCampoConfirmarContraseña(contraseña, confirmarContraseña, nom
 
 
 });
-
 
   //testimonios carrusel
 document.addEventListener("DOMContentLoaded", function () {
